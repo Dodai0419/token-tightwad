@@ -1,0 +1,7 @@
+token-tightwad
+Copyright 2026 Dodai0419
+
+This product includes rules, constants, regular expressions and text derived from
+TokenEconomizer (https://github.com/microsoft/TokenEconomizer), Copyright (c) Microsoft
+Corporation, licensed under the Apache License 2.0. They were rewritten and condensed into
+tightwad.py. This product is not affiliated with or endorsed by Microsoft.

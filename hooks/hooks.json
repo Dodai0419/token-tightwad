@@ -1,0 +1,9 @@
+{
+  "description": "token-tightwad: known facts at session start, and a loop guard during a turn. No model calls.",
+  "hooks": {
+    "SessionStart": [{"hooks": [{"type": "command", "command": "python \"${CLAUDE_PLUGIN_ROOT}/tightwad.py\" hook", "timeout": 15}]}],
+    "UserPromptSubmit": [{"hooks": [{"type": "command", "command": "python \"${CLAUDE_PLUGIN_ROOT}/tightwad.py\" hook", "timeout": 10}]}],
+    "PostToolUse": [{"hooks": [{"type": "command", "command": "python \"${CLAUDE_PLUGIN_ROOT}/tightwad.py\" hook", "timeout": 10}]}],
+    "PostToolUseFailure": [{"hooks": [{"type": "command", "command": "python \"${CLAUDE_PLUGIN_ROOT}/tightwad.py\" hook", "timeout": 10}]}]
+  }
+}
